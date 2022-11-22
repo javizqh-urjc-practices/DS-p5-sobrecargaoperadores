@@ -20,8 +20,8 @@ class Coleccion {
     size_t getSize() const; // return size
     const Coleccion &operator= (const Coleccion &); // assignment operator
     bool operator== (const Coleccion &) const; // equality operator
-    // inequality operator; returns opposite of == operator
 
+    // inequality operator; returns opposite of == operator
     bool operator!= (const Coleccion &right) const {
       return !(*this == right); // invokes Coleccion::operator==
     } // end function operator!=
