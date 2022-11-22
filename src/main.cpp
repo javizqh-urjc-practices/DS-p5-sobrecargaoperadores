@@ -27,17 +27,18 @@ int main() {
 
 	// create Coleccion integers3 using integers1 as an initializer; print size and contents
 	Coleccion integers3 (integers1); // invokes copy constructor
-	cout << "\nSize of Coleccion integers3 is " << integers3.getSize() << "\nColeccion after initialization:\n" << integers3;
+	cout << "\nSize of Coleccion integers3 is " << integers3.getSize() << "\nColeccion after initialization:" << integers3 << endl;
 
 	// use overloaded assignment (=) operator
 	cout << "\nAssigning integers2 to integers1:" << endl;
-	integers2 = integers1; // note target Coleccion is smaller
+	integers1 = integers2; // note target Coleccion is smaller
 	
-	cout << "\nintegers1: " << integers1 << "\nintegers2: " << integers2;
+	cout << "\nintegers1: " << integers1 << "\nintegers2: " << integers2 << endl;
 
 	// use overloaded equality (==) operator
-	cout << "\nEvaluating: integers1 == integers3" << endl;
-	if (integers1 == integers3) cout << "integers1 and integers3 are equal" << endl;
+	cout << "\nEvaluating: integers1 == integers" << endl;
+	if (integers1 == integers2) cout << "integers1 and integers2 are equal" << endl;
+	else cout << "integers1 and integers2 are not equal" << endl;
 
 	// use overloaded subscript operator to create rvalue
 	cout << "\nintegers1[5] is " << integers1 [5];
